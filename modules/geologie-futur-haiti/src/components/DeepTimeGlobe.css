@@ -1,0 +1,21 @@
+.deep-time-globe{margin:16px 0 14px;padding:13px;border:1px solid #3b4145;border-radius:12px;background:linear-gradient(145deg,#111923,#0b1018 72%);overflow:hidden;box-shadow:0 18px 48px #0005}
+.deep-time-globe__header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:1px 2px 11px}
+.deep-time-globe__header>div:first-child{display:flex;flex-direction:column;gap:5px;min-width:0}
+.deep-time-globe__header span{color:#9eafb7;font:8px 'DM Mono',monospace;letter-spacing:.13em}
+.deep-time-globe__header strong{overflow:hidden;color:#f1e9dc;font:600 14px Manrope,sans-serif;text-overflow:ellipsis;white-space:nowrap}
+.deep-time-globe__actions{display:flex;flex:0 0 auto;gap:6px}
+.deep-time-globe__actions button{padding:7px 10px;border:1px solid #596672;border-radius:6px;background:#18232f;color:#eee0c6;font:9px 'DM Mono',monospace;cursor:pointer;transition:background .2s,border-color .2s}
+.deep-time-globe__actions button:first-child{border-color:#bc8b58;background:#342719;color:#ffe0ac}
+.deep-time-globe__actions button:hover{border-color:#caa16c;background:#293540}
+.deep-time-globe__actions button:focus-visible{outline:2px solid #f3c988;outline-offset:2px}
+.deep-time-globe__canvas{position:relative;height:clamp(310px,46vw,460px);min-height:300px;overflow:hidden;border:1px solid #ffffff14;border-radius:9px;background:radial-gradient(ellipse at 50% 48%,#12293a 0,#090e17 66%);touch-action:none}
+.deep-time-globe__canvas canvas{display:block;width:100%;height:100%;outline:none}
+.deep-time-globe__hint{position:absolute;right:10px;bottom:9px;z-index:3;padding:6px 8px;border:1px solid #d8e5ed19;border-radius:5px;background:#090e17d9;color:#c2cbd1;font:8px 'DM Mono',monospace;pointer-events:none}
+.deep-time-globe__note{margin:9px 2px 1px;color:#aeb7ba;font-size:9px;line-height:1.55}
+.deep-time-cinematic__canvas{background:#050914}
+.deep-time-cinematic__canvas::after{position:absolute;inset:45% 0 0;z-index:1;background:linear-gradient(transparent,#070b12a8);content:"";pointer-events:none}
+.deep-time-cinematic__hud{position:absolute;z-index:2;top:15px;left:16px;display:flex;max-width:min(72%,460px);flex-direction:column;gap:5px;padding:10px 13px;border-left:2px solid #e1a565;background:linear-gradient(90deg,#090f19e8,#090f1938,transparent);pointer-events:none}
+.deep-time-cinematic__hud span{color:#edc18a;font:8px 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase}
+.deep-time-cinematic__hud strong{color:#fff4e2;font:600 clamp(14px,2.4vw,20px) Manrope,sans-serif;text-shadow:0 2px 10px #000}
+.deep-time-cinematic__hud small{color:#d2d9dd;font:9px 'DM Mono',monospace;text-shadow:0 2px 8px #000}
+@media(max-width:560px){.deep-time-globe{margin:11px 0;padding:9px;border-radius:10px}.deep-time-globe__header{align-items:flex-start;flex-direction:column;gap:8px}.deep-time-globe__header strong{white-space:normal}.deep-time-globe__actions{width:100%}.deep-time-globe__actions button{flex:1;min-height:36px}.deep-time-globe__canvas{height:clamp(285px,70vw,380px);min-height:285px}.deep-time-globe__hint{max-width:calc(100% - 20px);font-size:7px}.deep-time-globe__note{font-size:9px}.deep-time-cinematic__hud{top:11px;left:11px;padding:8px 10px}}

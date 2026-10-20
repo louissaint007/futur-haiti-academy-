@@ -1,0 +1,50 @@
+{
+  "earth-forms": [
+    "/deep-time/frames/earth-forms-01.webp",
+    "/deep-time/frames/earth-forms-02.webp"
+  ],
+  "moon-forming": [
+    "/deep-time/frames/moon-forming-01.webp",
+    "/deep-time/frames/moon-forming-02.webp"
+  ],
+  "early-oceans": [
+    "/deep-time/frames/early-oceans-01.webp",
+    "/deep-time/frames/early-oceans-02.webp"
+  ],
+  "early-life": [
+    "/deep-time/frames/early-life-01.webp",
+    "/deep-time/frames/early-life-02.webp"
+  ],
+  "oxygen": [
+    "/deep-time/frames/oxygen-01.webp",
+    "/deep-time/frames/oxygen-02.webp"
+  ],
+  "cryogenian": [
+    "/deep-time/frames/cryogenian-01.webp",
+    "/deep-time/frames/cryogenian-02.webp"
+  ],
+  "cambrian": [
+    "/deep-time/frames/cambrian-01.webp",
+    "/deep-time/frames/cambrian-02.webp"
+  ],
+  "pangaea": [
+    "/deep-time/frames/pangaea-01.webp",
+    "/deep-time/frames/pangaea-02.webp"
+  ],
+  "permian-crisis": [
+    "/deep-time/frames/permian-crisis-01.webp",
+    "/deep-time/frames/permian-crisis-02.webp"
+  ],
+  "cretaceous-crisis": [
+    "/deep-time/frames/cretaceous-crisis-01.webp",
+    "/deep-time/frames/cretaceous-crisis-02.webp"
+  ],
+  "ice-age": [
+    "/deep-time/frames/ice-age-01.webp",
+    "/deep-time/frames/ice-age-02.webp"
+  ],
+  "today": [
+    "/deep-time/frames/today-01.webp",
+    "/deep-time/frames/today-02.webp"
+  ]
+}

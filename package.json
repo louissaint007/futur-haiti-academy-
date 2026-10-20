@@ -1,0 +1,13 @@
+{
+  "name": "futur-haiti-academie",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

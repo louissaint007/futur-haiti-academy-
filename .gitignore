@@ -1,0 +1,9 @@
+node_modules/
+modules/*/node_modules/
+modules/*/dist/
+modules/*/android/
+dist/
+/public/apps/
+.appforge/
+.playwright-cli/
+*.log

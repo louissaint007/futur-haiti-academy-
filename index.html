@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07111f" />
+    <meta name="description" content="Les laboratoires éducatifs Futur Haïti, réunis dans une seule application locale." />
+    <title>Futur Haïti — Académie</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="home" id="home">
+      <header class="topbar">
+        <a class="brand" href="#accueil" aria-label="Futur Haïti, accueil">
+          <span class="brand-mark" aria-hidden="true">FH</span>
+          <span><strong>FUTUR HAÏTI</strong><small>ACADÉMIE · LABORATOIRES</small></span>
+        </a>
+        <span class="offline"><i></i> Ressources locales</span>
+      </header>
+
+      <section class="welcome" id="accueil">
+        <p class="eyebrow">APPRENDRE EN EXPLORANT</p>
+        <h1>Choisis un <span>laboratoire</span></h1>
+        <p class="intro">Des expériences interactives réunies au même endroit. Les activités principales sont intégrées à l’application et conçues pour rester accessibles sans Internet.</p>
+      </section>
+
+      <section class="subjects" aria-label="Matières disponibles">
+        <button class="subject subject-astronomy" data-app="systeme-solaire-futur-haiti" aria-label="Ouvrir le laboratoire du système solaire">
+          <span class="subject-icon" aria-hidden="true">✦</span>
+          <span class="subject-copy"><small>EXPLORATION SPATIALE</small><strong>Système solaire</strong><span>Planètes, Soleil, lunes et univers</span></span>
+          <span class="subject-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="subject subject-geology" data-app="geologie-futur-haiti" aria-label="Ouvrir le laboratoire de géologie">
+          <span class="subject-icon" aria-hidden="true">◈</span>
+          <span class="subject-copy"><small>TERRE &amp; MATIÈRE</small><strong>Géologie</strong><span>Volcans, plaques, fossiles et temps profond</span></span>
+          <span class="subject-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="subject subject-chemistry" data-app="chimie-futur-haiti" aria-label="Ouvrir le laboratoire de chimie">
+          <span class="subject-icon" aria-hidden="true">⚗</span>
+          <span class="subject-copy"><small>ATÒM · LABORATOIRE</small><strong>Chimie</strong><span>Atomes, éléments et expériences virtuelles</span></span>
+          <span class="subject-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="subject subject-history" data-app="histoire-futur-haiti" aria-label="Ouvrir le laboratoire d’histoire">
+          <span class="subject-icon" aria-hidden="true">⌛</span>
+          <span class="subject-copy"><small>MÉMOIRE &amp; PATRIMOINE</small><strong>Histoire</strong><span>Repères haïtiens, mondiaux et lieux patrimoniaux</span></span>
+          <span class="subject-arrow" aria-hidden="true">↗</span>
+        </button>
+      </section>
+
+      <footer class="footnote">Une plateforme de découverte éducative · Futur Haïti</footer>
+    </main>
+
+    <section class="viewer" id="viewer" hidden aria-label="Application éducative">
+      <div class="viewer-bar">
+        <button class="back" id="back" aria-label="Retour aux matières">← <span>Matières</span></button>
+        <strong id="current-title">Futur Haïti</strong>
+        <button class="home-icon" id="home-button" aria-label="Retour à l’accueil">⌂</button>
+      </div>
+      <iframe id="app-frame" title="Laboratoire éducatif" allow="fullscreen; xr-spatial-tracking" loading="eager"></iframe>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

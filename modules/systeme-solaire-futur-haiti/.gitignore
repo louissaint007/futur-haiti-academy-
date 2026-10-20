@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.appforge/
+.playwright-cli/
+.env
+.env.*
+!.env.example
+(\{name

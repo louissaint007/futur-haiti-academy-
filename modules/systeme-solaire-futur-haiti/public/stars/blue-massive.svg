@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="blue" cx="35%" cy="28%" r="78%"><stop stop-color="#f7ffff"/><stop offset=".24" stop-color="#b6f4ff"/><stop offset=".53" stop-color="#61c9f4"/><stop offset=".82" stop-color="#3473ce"/><stop offset="1" stop-color="#151a52"/></radialGradient>
+    <radialGradient id="shade" cx="31%" cy="27%" r="77%"><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset=".8" stop-color="#111b43" stop-opacity=".14"/><stop offset="1" stop-color="#060a1a" stop-opacity=".96"/></radialGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".045 .065" numOctaves="3" seed="29"/><feColorMatrix values=".3 0 0 0 .12 0 .8 0 0 .2 0 0 1 0 .35 0 0 0 .3 0"/></filter>
+    <clipPath id="disk"><circle cx="128" cy="128" r="112"/></clipPath>
+  </defs>
+  <rect width="256" height="256" fill="#080b19"/><circle cx="128" cy="128" r="117" fill="#6bdfff" opacity=".22" filter="url(#grain)"/>
+  <g clip-path="url(#disk)"><circle cx="128" cy="128" r="112" fill="url(#blue)"/><circle cx="128" cy="128" r="112" filter="url(#grain)" opacity=".4" style="mix-blend-mode:soft-light"/>
+    <g fill="#407ed8" opacity=".54"><ellipse cx="78" cy="85" rx="17" ry="8" transform="rotate(-28 78 85)"/><ellipse cx="153" cy="124" rx="21" ry="9" transform="rotate(17 153 124)"/><ellipse cx="107" cy="173" rx="14" ry="7" transform="rotate(-18 107 173)"/><ellipse cx="191" cy="184" rx="12" ry="6"/></g>
+    <g fill="none" stroke="#e2ffff" stroke-opacity=".4"><path d="M22 91q20-21 43-5t39 1q21-17 42-1t39 0q25-15 48 2"/><path d="M19 131q20-18 41-3t42 1q22-18 42-2t42 1q20-16 47-1"/><path d="M32 171q22-18 42-2t40 1q22-16 43-1t43 2q19-14 37 0"/></g>
+    <circle cx="128" cy="128" r="112" fill="url(#shade)"/>
+  </g>
+</svg>
