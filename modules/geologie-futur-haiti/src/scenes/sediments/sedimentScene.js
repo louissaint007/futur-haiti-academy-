@@ -272,10 +272,10 @@ export function buildSedimentaryBlock(group) {
 export function loadFossilSite(group, onDecoderReady, isCancelled = () => false) {
   const loader = new GLTFLoader();
   const decoder = new DRACOLoader();
-  decoder.setDecoderPath('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/draco/');
+  decoder.setDecoderPath('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/draco/');
   loader.setDRACOLoader(decoder);
   onDecoderReady(decoder);
-  loader.load('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/models/fossils/cerro-ballena-mpc-677.glb', (asset) => {
+  loader.load('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/models/fossils/cerro-ballena-mpc-677.glb', (asset) => {
     if (isCancelled()) return;
     const fossilSite = asset.scene;
     fitModelToScene(fossilSite, 5.5);

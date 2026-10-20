@@ -299,7 +299,7 @@ export default function StellarSphereScene({ starType, locale = 'fr', jetArrowRe
     window.addEventListener('resize', resize);
 
     const loader = new THREE.TextureLoader();
-    loader.load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/sun-photosphere-texture.png', texture => {
+    loader.load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/sun-photosphere-texture.png', texture => {
       if (disposed) {
         texture.dispose();
         return;

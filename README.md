@@ -35,7 +35,9 @@ La compilation adapte les chemins des ressources publiques de géologie et d’a
 
 Les fichiers de l’interface et les ressources présentes dans les dossiers des matières sont regroupés sous `dist/apps/`; la coquille ne contacte aucun serveur. Une fois cette version intégrée à une enveloppe Android, les parcours dont les médias sont embarqués pourront être présentés sans réseau. Les liens vers des sources externes, cartes en ligne ou sites web ne seront évidemment pas accessibles hors ligne.
 
-**Cette étape fournit la version web compilable; aucun APK unifié n’est encore construit ni installé sur le téléphone.** L’installation Android et l’essai sur l’appareil constituent l’étape suivante et doivent être vérifiés avant de compter sur l’application pour une présentation.
+La coque Android Capacitor est préparée à la racine du projet. Après installation des dépendances avec `npm install`, la commande `npm run android:apk` reconstruit les quatre matières, synchronise les ressources locales et produit l’APK debug dans `android/app/build/outputs/apk/debug/`. Pour l’installer sur un téléphone USB débogué : `adb install -r android/app/build/outputs/apk/debug/app-debug.apk`.
+
+L’APK fusionné et son fonctionnement hors ligne doivent être vérifiés sur l’appareil avant de remplacer les applications déjà installées. Les liens vers des sources externes, cartes en ligne ou sites web ne seront évidemment pas accessibles hors ligne.
 
 ## Dépôts Git sources
 

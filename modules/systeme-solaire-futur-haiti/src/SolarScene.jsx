@@ -5,8 +5,8 @@ import { CSS2DObject, CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer
 import { celestialBodies } from './data/planets.js';
 import { dwarfPlanets } from './data/dwarfPlanets.js';
 
-const MOON_COLOR_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lroc-color-2k.jpg';
-const MOON_ELEVATION_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lola-elevation-1k.jpg';
+const MOON_COLOR_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lroc-color-2k.jpg';
+const MOON_ELEVATION_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lola-elevation-1k.jpg';
 
 function random(seed) {
   let value = seed >>> 0;
@@ -226,7 +226,7 @@ function createSun(scene) {
   sun.userData.bodyId = 'sun';
   scene.add(sun);
   // Texture illustrative générée pour la scène; l'image SDO de la galerie reste la référence NASA réelle.
-  new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/sun-photosphere-texture.png', texture => {
+  new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/sun-photosphere-texture.png', texture => {
     texture.colorSpace = THREE.SRGBColorSpace;
     texture.anisotropy = 4;
     texture.wrapS = THREE.RepeatWrapping;
@@ -313,7 +313,7 @@ function makePlanet(body, scene, onSelect) {
     });
   }
   if (body.id === 'earth') {
-    new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/earth-surface-texture.png', texture => {
+    new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/earth-surface-texture.png', texture => {
       texture.colorSpace = THREE.SRGBColorSpace;
       texture.anisotropy = 8;
       texture.wrapS = THREE.RepeatWrapping;

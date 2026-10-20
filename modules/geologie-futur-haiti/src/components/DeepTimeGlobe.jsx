@@ -21,11 +21,11 @@ const STAGES = {
 };
 
 function surfaceFramePath(stageId, frame) {
-  return `/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/deep-time/frames/${stageId}-${String(frame + 1).padStart(2, '0')}.webp`;
+  return `/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/deep-time/frames/${stageId}-${String(frame + 1).padStart(2, '0')}.webp`;
 }
 
 function surfaceTransitionPath(fromId, toId, frame) {
-  return `/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/deep-time/transitions/${fromId}--${toId}-${String(frame).padStart(2, '0')}.png`;
+  return `/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/deep-time/transitions/${fromId}--${toId}-${String(frame).padStart(2, '0')}.png`;
 }
 
 function createRockyBodyTexture() {

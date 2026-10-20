@@ -4,6 +4,12 @@ modules/*/dist/
 modules/*/android/
 dist/
 /public/apps/
+android/.gradle/
+android/local.properties
+android/build/
+android/app/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
 .appforge/
 .playwright-cli/
 *.log

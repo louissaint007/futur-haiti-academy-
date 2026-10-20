@@ -343,7 +343,7 @@ export default function DeepSkySimulation({ scenario, locale = 'fr' }) {
     scene.add(glow);
     const halo = new THREE.Mesh(new THREE.SphereGeometry(1.55, 48, 32), makeGlowMaterial(config.color, 0.05));
     scene.add(halo);
-    const texture = new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/sun-photosphere-texture.png', loaded => {
+    const texture = new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/sun-photosphere-texture.png', loaded => {
       if (disposed) {
         loaded.dispose();
         return;

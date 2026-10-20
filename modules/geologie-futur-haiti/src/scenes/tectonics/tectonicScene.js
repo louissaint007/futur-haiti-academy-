@@ -241,7 +241,7 @@ export function animatePlates(group, { boundary, time, playing }) {
 }
 
 export async function loadCocosSlab(group, isCancelled = () => false) {
-  const response = await fetch('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/models/tectonics/cocos-slab2-mesh.json');
+  const response = await fetch('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/models/tectonics/cocos-slab2-mesh.json');
   if (!response.ok) throw new Error(`USGS slab geometry unavailable (${response.status})`);
   const data = await response.json();
   if (isCancelled()) return null;

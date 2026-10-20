@@ -4,8 +4,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // The 2K albedo and 1K LOLA relief maps keep the interactive model within
 // modest GPU memory budgets while retaining enough detail for close viewing.
-const MOON_COLOR_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lroc-color-2k.jpg';
-const MOON_ELEVATION_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lola-elevation-1k.jpg';
+const MOON_COLOR_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lroc-color-2k.jpg';
+const MOON_ELEVATION_MAP = '/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/moon-lola-elevation-1k.jpg';
 
 export default function EarthGlobe({ bodyId = 'earth', copy, onClose, locale = 'fr' }) {
   const isMoon = bodyId === 'moon';
@@ -103,7 +103,7 @@ export default function EarthGlobe({ bodyId = 'earth', copy, onClose, locale = '
     }, undefined, () => {
       mount.innerHTML = '<div class="webgl-error"><strong>La texture lunaire n’a pas pu être chargée.</strong><span>Vérifiez la connexion locale, puis rechargez la page.</span></div>';
     });
-    else new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/earth-surface-texture.png', texture => {
+    else new THREE.TextureLoader().load('/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/apps/systeme-solaire-futur-haiti/nasa/earth-surface-texture.png', texture => {
       texture.colorSpace = THREE.SRGBColorSpace;
       texture.anisotropy = 8;
       texture.wrapS = THREE.RepeatWrapping;

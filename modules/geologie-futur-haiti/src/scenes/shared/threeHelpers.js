@@ -8,7 +8,7 @@ const textureLoader = new THREE.TextureLoader();
 
 export function texture(kind) {
   const extension = kind === 'volcano' ? 'jpg' : 'png';
-  const map = textureLoader.load(`/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/textures/${textureFiles[kind] || textureFiles.volcano}.${extension}`);
+  const map = textureLoader.load(`/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/textures/${textureFiles[kind] || textureFiles.volcano}.${extension}`);
   map.colorSpace = THREE.SRGBColorSpace; map.wrapS = map.wrapT = THREE.RepeatWrapping;
   map.anisotropy = 8;
   const tiling = kind === 'lava' ? 1.25 : kind === 'volcano' ? 3.2 : kind === 'granite' ? 1.7 : kind === 'gneiss' ? 1.4 : 1.8;

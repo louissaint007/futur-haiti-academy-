@@ -333,7 +333,7 @@ export function inspectVolcano(group, selectedPart = 'all', exploded = false) {
 }
 
 export async function loadVolcanoTerrain(group, isCancelled = () => false) {
-  const response = await fetch('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/models/volcano/mount-st-helens-dem.json');
+  const response = await fetch('/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/apps/geologie-futur-haiti/models/volcano/mount-st-helens-dem.json');
   if (!response.ok) throw new Error(`DEM local indisponible (${response.status})`);
   const data = await response.json();
   if (isCancelled()) return null;

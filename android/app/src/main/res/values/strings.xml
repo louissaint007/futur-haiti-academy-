@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Futur Haiti Academie</string>
+    <string name="title_activity_main">Futur Haiti Academie</string>
+    <string name="package_name">com.futurehaiti.academie</string>
+    <string name="custom_url_scheme">com.futurehaiti.academie</string>
+</resources>
